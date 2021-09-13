@@ -1,0 +1,66 @@
+﻿@using Reservaciones_test.Models
+
+@{ 
+    var data = ViewBag.Message;
+}
+<br />
+    
+        <h2>Descripción y Servicios</h2>
+        <br />
+        <form action="/Home/JsonDos/" method="post">
+            @foreach (var item in ViewData["jointables"] as IEnumerable<Reservaciones_test.Models.MultipleTablesJoinClass>)
+
+            {
+                <h5>Selección @item.t_Habitacioneslist.Tipo</h5>
+                <p>@item.descripcioneslist.Descripcion</p>
+                <p>Servicios: @item.servicioslist.Contenido</p>
+
+            }
+            <h2>Reserva</h2>
+            <br />
+
+            <div class="form-group col-lg-12">
+                <label for="formGroupExampleInput">Modelo: </label>
+                <select class="form-control" name="modelo">
+                    @foreach (var modelo in ViewData["jointables"] as IEnumerable<Reservaciones_test.Models.MultipleTablesJoinClass>)
+                    {
+                        <option>@modelo.t_Habitacioneslist.Tipo</option>
+                    }
+
+                </select>
+            </div>
+            <div class="row col-lg-12 col-sm-12">
+                <div class="form-group col-lg-6">
+                    <label>Adultos: </label>
+                    <select class="form-control " name="adultos">
+                        @for (int i = 1; i <= 10; i++)
+                        {
+                            <option value="@i">@i</option>
+                        }
+                    </select>
+                </div>
+
+                <div class="form-group col-lg-6">
+                    <label>Menores: </label>
+                    <select class="form-control " name="menores">
+                        @for (int i = 1; i <= 10; i++)
+                        {
+                            <option value="@i">@i</option>
+                        }
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <input type="submit" name="name" class="btn btn-primary" value="¡Reservar!" />
+                    </div>
+                </div>
+            </div>
+
+
+
+        </form>
+    

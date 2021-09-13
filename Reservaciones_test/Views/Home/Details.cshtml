@@ -1,0 +1,57 @@
+﻿@model Reservaciones_test.Models.Reservaciones
+
+@{
+    ViewData["Title"] = "Detalle de Reserva";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<h1>@ViewData["Title"]</h1>
+<h5>Estos son sus detalles de reserva: </h5>
+    <div>
+        <div class="col-lg-6">
+            <h6>Ciudad:</h6>
+            <p>@ViewData["destino"]</p>
+        </div>
+
+        <div class="col-lg-6">
+            <h6>Nombre del hotel:</h6>
+            <p>@ViewData["hotel"]</p>
+        </div>
+
+        <div class="col-lg-6">
+            <h6>Fecha de llegada:</h6>
+            <p>@ViewData["fecha"]</p>
+        </div>
+
+        <div class="col-lg-6">
+
+            <h6>Habitación reservada:</h6>
+            <p>@ViewData["habitacion"]</p>
+        </div>
+
+        <div class="col-lg-6">
+            <h6>Cantidad de adultos:</h6>
+            <p>@ViewData["adultos"]</p>
+        </div>
+
+        <div class="col-lg-6">
+            <h6>Cantidad de menores:</h6>
+            <p>@ViewData["menores"]</p>
+        </div>
+
+        <div class="col-lg-6">
+            <h6>Costo total:</h6>
+            <p>$ @ViewData["total"].00 MXN</p>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <a href="/home/json/" class="btn btn-primary">Enviar JSON</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>

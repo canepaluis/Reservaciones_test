@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alexis Canepa\\source\\repos\\Reservaciones_test\\Reservaciones_test\\Reservaciones_test.csproj": {}
+    "D:\\Media\\Documentos\\Proyectos\\Reservaciones_test\\Reservaciones_test\\Reservaciones_test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alexis Canepa\\source\\repos\\Reservaciones_test\\Reservaciones_test\\Reservaciones_test.csproj": {
+    "D:\\Media\\Documentos\\Proyectos\\Reservaciones_test\\Reservaciones_test\\Reservaciones_test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alexis Canepa\\source\\repos\\Reservaciones_test\\Reservaciones_test\\Reservaciones_test.csproj",
+        "projectUniqueName": "D:\\Media\\Documentos\\Proyectos\\Reservaciones_test\\Reservaciones_test\\Reservaciones_test.csproj",
         "projectName": "Reservaciones_test",
-        "projectPath": "C:\\Users\\Alexis Canepa\\source\\repos\\Reservaciones_test\\Reservaciones_test\\Reservaciones_test.csproj",
+        "projectPath": "D:\\Media\\Documentos\\Proyectos\\Reservaciones_test\\Reservaciones_test\\Reservaciones_test.csproj",
         "packagesPath": "C:\\Users\\Alexis Canepa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alexis Canepa\\source\\repos\\Reservaciones_test\\Reservaciones_test\\obj\\",
+        "outputPath": "D:\\Media\\Documentos\\Proyectos\\Reservaciones_test\\Reservaciones_test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

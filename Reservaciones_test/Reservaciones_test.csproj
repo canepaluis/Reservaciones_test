@@ -20,7 +20,6 @@
 
   <ItemGroup>
     <Folder Include="json\" />
-    <Folder Include="NewFolder\" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
